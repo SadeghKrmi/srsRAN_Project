@@ -138,6 +138,8 @@ void gnb_console_helper::on_app_running()
 
   fmt::print("==== gNodeB started ===\n");
   fmt::print("Type <t> to view trace\n");
+  fmt::print("Start srsUE now\n");
+  metrics_plotter.toggle_print();
 }
 
 void gnb_console_helper::on_app_stopping()
